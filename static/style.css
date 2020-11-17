@@ -8,15 +8,33 @@ html, body{
 }
 
 .background {
-  background: no-repeat center center fixed;
+  background: url(images/white.jpg) no-repeat center center fixed;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   opacity: 0;
   animation: fadein 2s ease-out 0.5s forwards;
+}
+
+.backgrounddevice {
+    display: none;
+    content:"";
+    position:fixed;
+    top:0;
+    height:100vh;
+    left:0;
+    right:0;
+    z-index:-1;
+    background: url(images/white3.jpg) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0;
+    animation: fadein 2s ease-out 0.5s forwards;
 }
 
 .lineleft {
@@ -156,7 +174,7 @@ html, body{
   font-weight: lighter;
   text-align: justify;
   color: black;
-  font-size: 2.8vh;
+  font-size: 3vh;
   position: absolute;
   background: rgba(255, 255, 255, 0.8);
 }
@@ -259,6 +277,26 @@ html, body{
   transition: .3s ease color;
 }
 
+.mail {
+  display: none;
+  opacity: 0;
+  font-size: 2.5vh;
+  color: black;
+  font-style: italic;
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  margin-left: 20%;
+}
+
+.maildevice {
+  display: none;
+  font-style: italic;
+  position: absolute;
+  font-size: 18px;
+  left: 20vw;
+}
+
 .contactdevice,
 .contactdevice a {
   display: none;
@@ -272,6 +310,11 @@ html, body{
 
 .contact:hover {
   color: slategrey;
+}
+
+.contact:hover .mail {
+  animation: fadein ease-out 1s forwards;
+  display: block;
 }
 
 .contact form {
@@ -466,6 +509,8 @@ html, body{
     scroll-behavior: smooth;
   }
 
+
+
   @keyframes slideleft {
     0%{
       transform: translateX(-600px);
@@ -634,40 +679,61 @@ html, body{
     scroll-behavior: smooth;
   }
 
+@keyframes slideup {
+  0%{
+    transform: translateY(10vh);
+  }
+}
+
+@keyframes slidedown {
+  0%{
+    transform: translateY(-10vh);
+  }
+}
+
   @keyframes slideleft {
     0%{
-      transform: translateX(-400px);
+      transform: translateX(-10vw);
     }
   }
 
   @keyframes slideright {
     0%{
-      transform: translateX(400px);
+      transform: translateX(10vw);
     }
   }
+
+     .background {
+      display: none;
+    }
+
+    .backgrounddevice {
+      display: block;
+    }
 
     .lineleft {
       position: absolute;
       top: 48%;
-      left: 10%;
+
     }
 
     .lineright {
-      position: absolute;
-      bottom: 51%;
-      right: 10%;
+        position: absolute;
+        bottom: 51%;
+
     }
 
     .linebottom {
-      position: absolute;
-      left: 49%;
-      bottom: 10%;
+        position: absolute;
+        left: 49%;
+
+
     }
 
     .lineup {
-      position: absolute;
-      right: 49%;
-      top: 10%;
+        position: absolute;
+        right: 49%;
+
     }
 
     .my_name {
@@ -675,13 +741,19 @@ html, body{
       position: absolute;
       left: 56%;
       top: 48%;
-      font-size: 7vh;
+      font-size: 16vw;
     }
 
     .socials {
       left: 50.5%;
       top: 37%;
       width: 25px;
+    }
+
+    .insta,
+    .git,
+    .linkedin {
+      height: 25px;
     }
 
     .about {
@@ -697,8 +769,8 @@ html, body{
     }
 
     .abouttxtdevice {
-      width: 85vw;
-      left: 7vw;
+      width: 75vw;
+      left: 13vw;
       top: 10vh;
     }
 
@@ -727,6 +799,10 @@ html, body{
       display: none;
     }
 
+    .maildevice {
+        display: block;
+    }
+
     .contactdevice,
     .contactdevice a {
       display: block;
@@ -736,30 +812,30 @@ html, body{
     }
 
     .contactdevicecont form {
-      padding: 10vh 5vw;;
+      padding: 45px 10px;
     }
 
     .formgroupdevice {
       font-size: 30px;
-      margin-bottom: 5%;
+      margin-bottom: 20px;
     }
 
     .formgroupdevice input{
       width: 80vw;
-      height: 5vh;
+      height: 40px;
       font-size: 25px;
     }
 
     .formgroupdevice textarea {
       width: 80vw;
-      height: 40vh;
+      height: 300px;
       font-size: 25px;
     }
 
     .buttondevice {
       font-size: 25px;
       width: 40vw;
-      height: 5vh;
+      height: 40px;
     }
 
     .buttondevice:active {
