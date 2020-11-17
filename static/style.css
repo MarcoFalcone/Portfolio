@@ -28,7 +28,7 @@ html, body{
     left:0;
     right:0;
     z-index:-1;
-    background: url(images/white3.jpg) center center;
+    background: url(images/white2.jpg) center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -614,6 +614,12 @@ html, body{
 
     .contact {
       display: none;
+    }
+
+    .maildevice {
+      display: block;
+      font-size: 28px;
+      left: 30vw;
     }
 
     .contactdevice,
