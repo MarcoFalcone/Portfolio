@@ -160,7 +160,7 @@ html, body{
   left: 5vw;
   width: 35vw;
   height: 33vh;
-  font-size: 23px;
+  font-size: 20px;
   color: black;
   text-align: justify;
   font-family: 'Montserrat', sans-serif;
@@ -239,7 +239,7 @@ html, body{
 
 .work1 a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 23px;
   color: black;
 }
 
@@ -280,11 +280,11 @@ html, body{
 .mail {
   display: none;
   opacity: 0;
-  font-size: 2.5vh;
+  font-size: 20px;
   color: black;
   font-style: italic;
   position: absolute;
-  top: 30%;
+  top: 40%;
   left: 100%;
   margin-left: 20%;
 }
@@ -522,6 +522,10 @@ html, body{
       transform: translateX(600px);
     }
   }
+
+    .background {
+        position: fixed;
+    }
 
     .lineleft {
       position: absolute;
