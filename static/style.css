@@ -292,9 +292,7 @@ html, body{
 .maildevice {
   display: none;
   font-style: italic;
-  position: absolute;
-  font-size: 18px;
-  left: 20vw;
+  text-align: center;
 }
 
 .contactdevice,
@@ -619,7 +617,6 @@ html, body{
     .maildevice {
       display: block;
       font-size: 28px;
-      left: 30vw;
     }
 
     .contactdevice,
@@ -811,6 +808,7 @@ html, body{
 
     .maildevice {
         display: block;
+        font-size: 18px;
     }
 
     .contactdevice,
@@ -864,4 +862,172 @@ html, body{
     .stop3 {
       display: block;
     }
+}
+
+/*landscape device*/
+@media screen and (orientation: landscape) and (max-width: 1024px) {
+    html,body {
+      overflow-y: visible;
+      scroll-behavior: smooth;
+    }
+
+    .background {
+      position: fixed;
+    }
+
+    .lineleft {
+      position: absolute;
+      top: 47.7%;
+    }
+
+    .lineright {
+      position: absolute;
+      bottom: 51%;
+    }
+
+    .linebottom {
+      position: absolute;
+      left: 49.5%;
+    }
+
+    .lineup {
+      position: absolute;
+      right: 49%;
+    }
+
+    .homedevicecont {
+      display: block;
+    }
+
+    .socials {
+      left: 50.5%;
+      top: 37%;
+      width: 2vw;
+    }
+
+    .insta,
+    .git,
+    .linkedin {
+      height: 3vh;
+      width: 100%;
+    }
+
+    .my_name {
+      position: absolute;
+      left: 47%;
+      top: 51.5%;
+      font-size: 13vh;
+    }
+
+    .about {
+      display: none;
+    }
+
+    .aboutdevice,
+    .aboutdevice a {
+      display: block;
+      font-size: 7vw;
+      left: 62%;
+      top: 28%;
+    }
+
+    .aboutdevicecont {
+      display: block;
+    }
+
+    .abouttxtdevice {
+      display: block;
+      width: 60vw;
+      left: 20vw;
+      top: 10vh;
+      font-size: 20px;
+    }
+
+    .works {
+      display: none;
+    }
+
+    .worksdevice,
+    .worksdevice a {
+      display: block;
+      font-size: 7vw;
+      left: 15%;
+      top: 56%;
+    }
+
+    .workdevicecont {
+      display: block;
+      padding: 10vh 20vw;
+    }
+
+    .work1device a {
+      width: 60vw;
+      font-size: 30px;
+    }
+
+    .contact {
+      display: none;
+    }
+
+    .maildevice {
+      display: block;
+      font-size: 28px;
+    }
+
+    .contactdevice,
+    .contactdevice a {
+      display: block;
+      font-size: 7vw;
+      left: 59%;
+      top: 56%;
+    }
+
+    .contactdevicecont {
+      display: block;
+    }
+
+    .contactdevicecont form {
+      padding: 5vh 20vw;
+    }
+
+    .formgroupdevice {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .formgroupdevice input{
+      width: 60vw;
+      height: 40px;
+      font-size: 25px;
+    }
+
+    .formgroupdevice textarea {
+      width: 60vw;
+      height: 300px;
+      font-size: 25px;
+    }
+
+    .buttondevice {
+      font-size: 25px;
+      width: 40vw;
+      height: 40px;
+    }
+
+    .buttondevice:active {
+      color: white;
+      background: slategrey;
+    }
+
+    .stop1 {
+      display: block;
+    }
+
+    .stop2 {
+      display: block;
+    }
+
+    .stop3 {
+      display: block;
+    }
+
 }
