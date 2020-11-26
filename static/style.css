@@ -174,8 +174,7 @@ html, body{
   font-weight: lighter;
   text-align: justify;
   color: black;
-  font-size: 3vh;
-  position: absolute;
+  font-size: 21px;
   background: rgba(255, 255, 255, 0.8);
 }
 
@@ -236,21 +235,31 @@ html, body{
   overflow-y: auto; these two for when you'll add more projects. */
 }
 
+.info {
+  display: none;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .work1 a {
   text-decoration: none;
   font-size: 23px;
   color: black;
 }
 
-.work1device a {
-  position: absolute;
-  text-decoration: none;
-  color: black;
-  text-align: center;
+.work1device {
+  margin-top: 60px;
   border: 1px solid slategrey;
   border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
   background: rgba(255, 255, 255, 0.8);
+}
+
+.work1device a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
 }
 
 .workscont a:hover {
@@ -291,7 +300,10 @@ html, body{
   display: none;
   font-style: italic;
   text-align: center;
+  width: 60vw;
+  margin: 0 auto;
 }
+
 
 .contactdevice,
 .contactdevice a {
@@ -371,10 +383,6 @@ html, body{
   opacity: 1;
 }
 
-.contactdevicecont form {
-  text-align: center;
-}
-
 .formgroupdevice {
   font-family: 'Montserrat', sans-serif;
 }
@@ -424,12 +432,11 @@ html, body{
   display: none;
   position: absolute;
   top: 300vh;
-  height: 100vh;
 }
 
 .backhome {
   position: absolute;
-  height: 5vh;
+  height: 35px;
   width: auto;
   left: 5vw;
   top: 3vh;
@@ -499,10 +506,8 @@ html, body{
 @media screen and (max-width: 800px) {
 
   html, body {
-    overflow-y: visible
+    overflow-y: visible;
   }
-
-
 
   @keyframes slideleft {
     0%{
@@ -574,13 +579,14 @@ html, body{
 
     .aboutdevicecont {
       display: block;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 20vw;
     }
 
     .abouttxtdevice {
       display: block;
-      width: 60vw;
-      left: 20vw;
-      top: 10vh;
+      width: 100%;
     }
 
     .works {
@@ -597,12 +603,20 @@ html, body{
 
     .workdevicecont {
       display: block;
-      padding: 10vh 20vw;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20vw;
+      text-align: center;
+    }
+
+    .info {
+      display: block;
+      font-size: 28px;
+      width: 60vw;
     }
 
     .work1device a {
-      width: 60vw;
-      font-size: 30px;
+      width: 100%;
     }
 
     .contact {
@@ -623,35 +637,41 @@ html, body{
     }
 
     .contactdevicecont {
-      display: block;
-    }
+       display: flex;
+       flex-direction: column;
+       padding: 0 20vw;
+     }
 
-    .contactdevicecont form {
-      padding: 5vh 15vw;
-    }
+     .contactdevicecont form {
+       text-align: center;
+     }
 
-    .formgroupdevice {
-      font-size: 40px;
-      margin-bottom: 10%;
-    }
+     .formgroupdevice {
+       font-size: 30px;
+       margin-bottom: 20px;
+       margin-top: 25px;
+       text-align: center;
+     }
 
-    .formgroupdevice input{
-      width: 60vw;
-      height: 5vh;
-        font-size: 25px;
-    }
+     .formgroupdevice input{
+       width: 100%;
+       height: 40px;
+       font-size: 25px;
+       overflow: visible;
+     }
 
-    .formgroupdevice textarea {
-      width: 60vw;
-      height: 40vh;
-      color: black;
-      font-size: 25px;
-    }
+     .formgroupdevice textarea {
+       width: 100%;
+       height: 250px;
+       font-size: 25px;
+       overflow: visible;
+       resize: none;
+     }
 
     .buttondevice {
       font-size: 25px;
       width: 40vw;
-      height: 5vh;
+      height:40px;
     }
 
     .buttondevice:active {
@@ -677,7 +697,8 @@ html, body{
 @media screen and (max-width: 500px) {
 
   html, body {
-    overflow-y: visible
+    overflow-y: visible;
+    font-size: 16px;
   }
 
 @keyframes slideup {
@@ -715,30 +736,25 @@ html, body{
     .lineleft {
       position: absolute;
       top: 48%;
-
     }
 
     .lineright {
         position: absolute;
         bottom: 51%;
-
-    }
+      }
 
     .linebottom {
         position: absolute;
         left: 49%;
-
-
-    }
+      }
 
     .lineup {
         position: absolute;
         right: 49%;
-
-    }
+      }
 
     .my_name {
-      line-height: 7vh;
+      line-height: 55px;
       position: absolute;
       left: 56%;
       top: 48%;
@@ -769,10 +785,15 @@ html, body{
       top: 35%;
     }
 
+    .aboutdevicecont {
+      display: flex;
+      flex-direction: column;
+      padding: 80px 30px;
+    }
+
     .abouttxtdevice {
-      width: 75vw;
-      left: 13vw;
-      top: 10vh;
+      display: block;
+      width: 100%;
     }
 
     .works {
@@ -788,12 +809,20 @@ html, body{
     }
 
     .workdevicecont {
-      padding: 13vh 10vw;
+      display: flex;
+      flex-direction: column;
+      padding: 0 30px;
+      text-align: center;
+    }
+
+    .info {
+      display: block;
+      font-size: 18px;
+      width: 60vw;
     }
 
     .work1device a {
-      font-size: 6vw;
-      width: 80vw;
+      width: 100%;
     }
 
     .contact {
@@ -813,214 +842,42 @@ html, body{
       top: 56%;
     }
 
+   .contactdevicecont {
+      display: flex;
+      flex-direction: column;
+      padding: 0 30px;
+    }
+
     .contactdevicecont form {
-      padding: 45px 10px;
+      text-align: center;
     }
 
     .formgroupdevice {
       font-size: 30px;
       margin-bottom: 20px;
+      margin-top: 25px;
+      text-align: center;
     }
 
     .formgroupdevice input{
-      width: 80vw;
-      height: 40px;
-      font-size: 25px;
-    }
-
-    .formgroupdevice textarea {
-      width: 80vw;
-      height: 300px;
-      font-size: 25px;
-    }
-
-    .buttondevice {
-      font-size: 25px;
-      width: 40vw;
-      height: 40px;
-    }
-
-    .buttondevice:active {
-      color: white;
-      background: slategrey;
-    }
-
-    .stop1 {
-      display: block;
-    }
-
-    .stop2 {
-      display: block;
-    }
-
-    .stop3 {
-      display: block;
-    }
-}
-
-/*landscape device*/
-@media screen and (orientation: landscape) and (max-width: 1024px) {
-    html,body {
-      overflow-y: visible;
-    }
-
-    .background {
-      position: fixed;
-    }
-
-    .lineleft {
-      position: absolute;
-      top: 47.7%;
-    }
-
-    .lineright {
-      position: absolute;
-      bottom: 51%;
-    }
-
-    .linebottom {
-      position: absolute;
-      left: 49.5%;
-    }
-
-    .lineup {
-      position: absolute;
-      right: 49%;
-    }
-
-    .homedevicecont {
-      display: block;
-    }
-
-    .socials {
-      left: 50.5%;
-      top: 37%;
-      width: 2vw;
-    }
-
-    .insta,
-    .git,
-    .linkedin {
-      height: 3vh;
       width: 100%;
-    }
-
-    .my_name {
-      position: absolute;
-      left: 47%;
-      top: 51.5%;
-      font-size: 13vh;
-    }
-
-    .about {
-      display: none;
-    }
-
-    .aboutdevice,
-    .aboutdevice a {
-      display: block;
-      font-size: 7vw;
-      left: 62%;
-      top: 28%;
-    }
-
-    .aboutdevicecont {
-      display: block;
-    }
-
-    .abouttxtdevice {
-      display: block;
-      width: 60vw;
-      left: 20vw;
-      top: 10vh;
-      font-size: 20px;
-    }
-
-    .works {
-      display: none;
-    }
-
-    .worksdevice,
-    .worksdevice a {
-      display: block;
-      font-size: 7vw;
-      left: 15%;
-      top: 56%;
-    }
-
-    .workdevicecont {
-      display: block;
-      padding: 10vh 20vw;
-    }
-
-    .work1device a {
-      width: 60vw;
-      font-size: 30px;
-    }
-
-    .contact {
-      display: none;
-    }
-
-    .maildevice {
-      display: block;
-      font-size: 28px;
-    }
-
-    .contactdevice,
-    .contactdevice a {
-      display: block;
-      font-size: 7vw;
-      left: 59%;
-      top: 56%;
-    }
-
-    .contactdevicecont {
-      display: block;
-    }
-
-    .contactdevicecont form {
-      padding: 5vh 20vw;
-    }
-
-    .formgroupdevice {
-      font-size: 30px;
-      margin-bottom: 20px;
-    }
-
-    .formgroupdevice input{
-      width: 60vw;
       height: 40px;
       font-size: 25px;
+      overflow: visible;
     }
 
     .formgroupdevice textarea {
-      width: 60vw;
-      height: 300px;
+      width: 100%;
+      height: 250px;
       font-size: 25px;
+      overflow: visible;
+      resize: none;
     }
 
     .buttondevice {
       font-size: 25px;
       width: 40vw;
       height: 40px;
-    }
-
-    .buttondevice:active {
-      color: white;
-      background: slategrey;
-    }
-
-    .stop1 {
-      display: block;
-    }
-
-    .stop2 {
-      display: block;
-    }
-
-    .stop3 {
-      display: block;
     }
 
 }
