@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 .background {
@@ -61,3 +62,68 @@
      display: block;
     }
 }
+=======
+
+
+.background {
+  background: url(images/white.jpg) no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.backgrounddevice {
+    display: none;
+    content:"";
+    position:fixed;
+    top:0;
+    height:100vh;
+    left:0;
+    right:0;
+    z-index:-1;
+    background: url(images/white3.jpg) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.thanks {
+  color: black;
+  position: absolute;
+  left: 20%;
+  top: 30%;
+  font-family: 'Mrs Saint Delafield', cursive;
+  font-weight: lighter;
+  font-size: 9vh;
+}
+
+@media screen and (max-width: 800px) {
+
+ .thanks {
+   left: 0;
+   top: 0;
+   padding: 10vh 15vw;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .thanks {
+    padding: 10vh 5vw;
+    font-size: 8vh;
+  }
+
+
+   .background {
+     display: none;
+    }
+
+   .backgrounddevice {
+     display: block;
+    }
+}
+>>>>>>> d087ec9faa33ded87f975d6472786a7484cf7361
