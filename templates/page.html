@@ -11,7 +11,8 @@
     </head>
     <body>
 
-        <div class="background" style=background-image:url(static/images/white.jpg)></div>
+      <div class="cont">
+        <div class="background"></div>
 
         <div class="socials">
           <a href="https://www.instagram.com/markrius_/" target="_blank"><img class="insta" src="static/images/insta.png"></img></a>
@@ -29,7 +30,7 @@
           <p>About</p>
           <div class="abouttxt">
             <p>I've always been curious about coding but never thought of pursuing a career as a programmer up until
-              recently when I discovered Python and fell in love with it/I'm now fully dedicated to self-learning
+              recently when I discovered Python and fell in love with it/I'm currently self-learning
               full stack web development as well as Python and C programming and I'll be posting my future works
               on this website very soon/Thanks for passing by.
           </p>
@@ -41,7 +42,7 @@
           <div class="workscont">
             <div class="scrollmenu">
               <div class="work1">
-                <a href=""><p>My personal responsive portfolio built from scratch using html/css and flask</p></a>
+                <a href="https://github.com/MarcoFalcone/Portfolio" target="_blank"><p>My personal responsive portfolio built from scratch using html/css and flask</p></a>
               </div>
             </div>
           </div>
@@ -49,6 +50,7 @@
 
         <div class="contact">
           <p>Contact</p>
+            <div class="mail"><p>mfalcone.dev@gmail.com</p></div>
 
             <form action="submit_form" method="post">
               <div class="formgroup">
@@ -76,14 +78,17 @@
               <div class="lineup"></div>
 
             <!device>
+
+            <div class="backgrounddevice"></div>
+
             <div class="homedevicecont" id="homedevicecont"></div>
 
             <div class="aboutdevicecont" id="aboutdevicecont">
               <div class="abouttxtdevice">
                 <p>I've always been curious about coding but never thought of pursuing a career as a programmer up until
-                  recently when I discovered Python and fell in love with it/I'm now fully dedicated to self-learning
-                  full stack web development as well as Python and C programming and I'll be posting my future works
-                  on this website very soon/Thanks for passing by.
+              recently when I discovered Python and fell in love with it/I'm currently self-learning
+              full stack web development as well as Python and C programming and I'll be posting my future works
+              on this website very soon/Thanks for passing by.
               </p>
               </div>
 
@@ -92,8 +97,9 @@
             </div>
 
             <div class="workdevicecont" id="workdevicecont">
+                <div class="info"><p>Click on the projects to see the code!</p></div>
               <div class="work1device">
-                <a href=""><p>My personal responsive portfolio built from scratch using html/css and flask</p></a>
+                <a href="https://github.com/MarcoFalcone/Portfolio" target="_blank">My personal responsive portfolio built from scratch using html/css and flask</a>
               </div>
 
               <a href="#homedevicecont"><img class="backhome" src="static/images/home.png" ></a>
@@ -101,6 +107,7 @@
             </div>
 
             <div class="contactdevicecont" id="contactdevicecont">
+                <div class="maildevice"><p>mfalcone.dev@gmail.com</p></div>
               <form action="submit_form" method="post">
                 <div class="formgroupdevice">
                   Name <input type="text" id="name" name="name" required>
@@ -121,8 +128,6 @@
 
             </div>
 
-
-
             <div class="aboutdevice">
               <a href="#aboutdevicecont">About</a>
             </div>
@@ -136,15 +141,12 @@
             </form>
           </div>
 
+          <div class="stop1"></div>
+          <div class="stop2"></div>
+          <div class="stop3"></div>
+        </div>
 
-
-
-
-            <div class="stop1"></div>
-            <div class="stop2"></div>
-            <div class="stop3"></div>
-
-
-    </body>
-
+          <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+          <script src="static/main.js"></script>
+  </body>
 </html>

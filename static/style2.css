@@ -1,7 +1,7 @@
 
 
 .background {
-  background: no-repeat center center fixed;
+  background: url(images/white.jpg) no-repeat center center fixed;
   background-size: cover;
   position: fixed;
   top: 0;
@@ -10,8 +10,24 @@
   left: 0;
 }
 
+.backgrounddevice {
+    display: none;
+    content:"";
+    position:fixed;
+    top:0;
+    height:100vh;
+    left:0;
+    right:0;
+    z-index:-1;
+    background: url(images/white2.jpg) center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 .thanks {
-  color: slategrey;
+  color: black;
   position: absolute;
   left: 20%;
   top: 30%;
@@ -23,9 +39,9 @@
 @media screen and (max-width: 800px) {
 
  .thanks {
-  left: 0;
-  top: 0;
-  padding: 10vh 15vw;
+   left: 0;
+   top: 0;
+   padding: 10vh 15vw;
   }
 }
 
@@ -35,4 +51,13 @@
     padding: 10vh 5vw;
     font-size: 8vh;
   }
+
+
+   .background {
+     display: none;
+    }
+
+   .backgrounddevice {
+     display: block;
+    }
 }

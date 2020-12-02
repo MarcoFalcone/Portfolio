@@ -8,9 +8,9 @@ html, body{
 }
 
 .background {
-  background: no-repeat center center fixed;
+  background: url(images/white.jpg) no-repeat center center fixed;
   background-size: cover;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -72,12 +72,15 @@ html, body{
 }
 
 .socials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   position: absolute;
   transform: translate(-100%, -100%);
   width: 30px;
-  height: 30vh;
+  height: 20vh;
   left: 49.5%;
-  top: 37.5%;
+  top: 30%;
   opacity: 0;
   animation: fadein 3s ease-out 2s forwards;
 }
@@ -86,9 +89,8 @@ html, body{
 .git,
 .linkedin {
   width: 100%;
-  height: 3.2vh;;
+  height: auto;
   transition: ease 0.5s;
-  margin-top: 3vh;
 }
 
 .insta:hover {
@@ -129,12 +131,12 @@ html, body{
 }
 
 .abouttxt {
-  display: none;
   opacity: 0;
   position: absolute;
   height: 33vh;
   width: 40vw;
   bottom: 99%;
+  transition: 0.5s ease;
 }
 
 .abouttxt p {
@@ -142,7 +144,7 @@ html, body{
   left: 5vw;
   width: 35vw;
   height: 33vh;
-  font-size: 23px;
+  font-size: 20px;
   color: black;
   text-align: justify;
   font-family: 'Montserrat', sans-serif;
@@ -156,8 +158,7 @@ html, body{
   font-weight: lighter;
   text-align: justify;
   color: black;
-  font-size: 2.8vh;
-  position: absolute;
+  font-size: 21px;
   background: rgba(255, 255, 255, 0.8);
 }
 
@@ -166,8 +167,7 @@ html, body{
 }
 
 .about:hover .abouttxt {
-  display: block;
-  animation: fadein ease-out 1s forwards;
+  opacity: 1;
 }
 
 .works {
@@ -200,13 +200,13 @@ html, body{
 }
 
 .workscont {
-  display: none;
   position: absolute;
   width: 48vw;
   height: 50vh;
   right: 0;
   top: 0%;
   opacity: 0;
+  transition: 0.5s ease;
 }
 
 .scrollmenu {
@@ -219,21 +219,31 @@ html, body{
   overflow-y: auto; these two for when you'll add more projects. */
 }
 
+.info {
+  display: none;
+  font-style: italic;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .work1 a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 23px;
   color: black;
 }
 
-.work1device a {
-  position: absolute;
-  text-decoration: none;
-  color: black;
-  text-align: center;
+.work1device {
+  margin-top: 60px;
   border: 1px solid slategrey;
   border-radius: 8px;
-  font-family: 'Montserrat', sans-serif;
   background: rgba(255, 255, 255, 0.8);
+}
+
+.work1device a {
+  text-decoration: none;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
 }
 
 .workscont a:hover {
@@ -241,8 +251,7 @@ html, body{
 }
 
 .works:hover .workscont {
-  animation: fadein ease-out 1s forwards;
-  display: block;
+  opacity: 1;
 }
 
 .contact {
@@ -259,6 +268,27 @@ html, body{
   transition: .3s ease color;
 }
 
+.mail {
+  font-size: 20px;
+  color: black;
+  font-style: italic;
+  position: absolute;
+  top: 40%;
+  left: 100%;
+  margin-left: 20%;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.maildevice {
+  display: none;
+  font-style: italic;
+  text-align: center;
+  width: 60vw;
+  margin: 0 auto;
+}
+
+
 .contactdevice,
 .contactdevice a {
   display: none;
@@ -274,16 +304,20 @@ html, body{
   color: slategrey;
 }
 
+.contact:hover .mail {
+  opacity: 1;
+}
+
 .contact form {
   padding-top: 40%;
   padding-left: 30%;
-  display: none;
   position: absolute;
   color: black;
   width:47vw;
   height: 44vh;
   top: 0%;
   opacity: 0;
+  transition: 0.5s ease;
   overflow-y: auto;
 }
 
@@ -330,12 +364,7 @@ html, body{
 }
 
 .contact:hover form {
-  animation: fadein ease-out 1s forwards;
-  display: block;
-}
-
-.contactdevicecont form {
-  text-align: center;
+  opacity: 1;
 }
 
 .formgroupdevice {
@@ -392,7 +421,7 @@ html, body{
 
 .backhome {
   position: absolute;
-  height: 5vh;
+  height: 35px;
   width: auto;
   left: 5vw;
   top: 3vh;
@@ -459,12 +488,8 @@ html, body{
 }
 
 /*tablet*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1024px) {
 
-  html, body {
-    overflow-y: visible;
-    scroll-behavior: smooth;
-  }
 
   @keyframes slideleft {
     0%{
@@ -477,6 +502,25 @@ html, body{
       transform: translateX(600px);
     }
   }
+
+    .background {
+        display: none;
+    }
+
+    .cont {
+      width: 100vw;
+      height: 100vh;
+      background: url(images/white.jpg) no-repeat center center fixed;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      animation: fadein 2s ease-out 0.5s forwards;
+      overflow-y: auto;
+    }
 
     .lineleft {
       position: absolute;
@@ -508,14 +552,15 @@ html, body{
 
     .socials {
       left: 50.5%;
-      top: 37%;
+      top: 30%;
+      width: 20px;
     }
 
     .my_name {
       position: absolute;
       left: 47%;
       top: 51.5%;
-      font-size: 8vh;
+      font-size: 10vw;
     }
 
     .about {
@@ -527,18 +572,19 @@ html, body{
       display: block;
       font-size: 7vw;
       left: 62%;
-      top: 34%;
+      top: 25%;
     }
 
     .aboutdevicecont {
       display: block;
+      display: flex;
+      flex-direction: column;
+      padding: 60px 20vw;
     }
 
     .abouttxtdevice {
       display: block;
-      width: 60vw;
-      left: 20vw;
-      top: 10vh;
+      width: 100%;
     }
 
     .works {
@@ -550,21 +596,34 @@ html, body{
       display: block;
       font-size: 7vw;
       left: 15%;
-      top: 56%;
+      bottom: 25%;
     }
 
     .workdevicecont {
       display: block;
-      padding: 10vh 20vw;
+      display: flex;
+      flex-direction: column;
+      padding: 0 20vw;
+      text-align: center;
+    }
+
+    .info {
+      display: block;
+      font-size: 28px;
+      width: 60vw;
     }
 
     .work1device a {
-      width: 60vw;
-      font-size: 30px;
+      width: 100%;
     }
 
     .contact {
       display: none;
+    }
+
+    .maildevice {
+      display: block;
+      font-size: 28px;
     }
 
     .contactdevice,
@@ -572,39 +631,45 @@ html, body{
       display: block;
       font-size: 7vw;
       left: 59%;
-      top: 56%;
+      bottom: 25%;
     }
 
     .contactdevicecont {
-      display: block;
-    }
+       display: flex;
+       flex-direction: column;
+       padding: 30px 20vw;
+     }
 
-    .contactdevicecont form {
-      padding: 5vh 15vw;
-    }
+     .contactdevicecont form {
+       text-align: center;
+     }
 
-    .formgroupdevice {
-      font-size: 40px;
-      margin-bottom: 10%;
-    }
+     .formgroupdevice {
+       font-size: 30px;
+       margin-bottom: 20px;
+       margin-top: 25px;
+       text-align: center;
+     }
 
-    .formgroupdevice input{
-      width: 60vw;
-      height: 5vh;
-        font-size: 25px;
-    }
+     .formgroupdevice input{
+       width: 100%;
+       height: 40px;
+       font-size: 25px;
+       overflow: visible;
+     }
 
-    .formgroupdevice textarea {
-      width: 60vw;
-      height: 40vh;
-      color: black;
-      font-size: 25px;
-    }
+     .formgroupdevice textarea {
+       width: 100%;
+       height: 250px;
+       font-size: 25px;
+       overflow: visible;
+       resize: none;
+     }
 
     .buttondevice {
       font-size: 25px;
       width: 40vw;
-      height: 5vh;
+      height:40px;
     }
 
     .buttondevice:active {
@@ -629,58 +694,79 @@ html, body{
 /*smartphone*/
 @media screen and (max-width: 500px) {
 
-  html, body {
-    overflow-y: visible;
-    scroll-behavior: smooth;
+
+@keyframes slideup {
+  0%{
+    transform: translateY(10vh);
   }
+}
+
+@keyframes slidedown {
+  0%{
+    transform: translateY(-10vh);
+  }
+}
 
   @keyframes slideleft {
     0%{
-      transform: translateX(-400px);
+      transform: translateX(-10vw);
     }
   }
 
   @keyframes slideright {
     0%{
-      transform: translateX(400px);
+      transform: translateX(10vw);
     }
   }
+    .cont {
+      background: url(images/white2.jpg) no-repeat center center fixed;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      opacity: 0;
+      animation: fadein 2s ease-out 0.5s forwards;
+      overflow-y: auto;
+    }
+
+
+     .background {
+      display: none;
+    }
 
     .lineleft {
       position: absolute;
       top: 48%;
-      left: 10%;
     }
 
     .lineright {
-      position: absolute;
-      bottom: 51%;
-      right: 10%;
-    }
+        position: absolute;
+        bottom: 51%;
+      }
 
     .linebottom {
-      position: absolute;
-      left: 49%;
-      bottom: 10%;
-    }
+        position: absolute;
+        left: 49%;
+      }
 
     .lineup {
-      position: absolute;
-      right: 49%;
-      top: 10%;
-    }
+        position: absolute;
+        right: 49%;
+      }
 
     .my_name {
-      line-height: 7vh;
+      line-height: 55px;
       position: absolute;
       left: 56%;
       top: 48%;
-      font-size: 7vh;
+      font-size: 16vw;
     }
 
     .socials {
       left: 50.5%;
-      top: 37%;
+      top: 30%;
       width: 25px;
     }
 
@@ -696,10 +782,15 @@ html, body{
       top: 35%;
     }
 
+    .aboutdevicecont {
+      display: flex;
+      flex-direction: column;
+      padding: 80px 30px;
+    }
+
     .abouttxtdevice {
-      width: 85vw;
-      left: 7vw;
-      top: 10vh;
+      display: block;
+      width: 100%;
     }
 
     .works {
@@ -711,20 +802,33 @@ html, body{
       display: block;
       font-size: 11vw;
       left: 10%;
-      top: 56%;
+      bottom: 35%;
     }
 
     .workdevicecont {
-      padding: 13vh 10vw;
+      display: flex;
+      flex-direction: column;
+      padding: 0 30px;
+      text-align: center;
+    }
+
+    .info {
+      display: block;
+      font-size: 18px;
+      width: 60vw;
     }
 
     .work1device a {
-      font-size: 6vw;
-      width: 80vw;
+      width: 100%;
     }
 
     .contact {
       display: none;
+    }
+
+    .maildevice {
+        display: block;
+        font-size: 18px;
     }
 
     .contactdevice,
@@ -732,50 +836,45 @@ html, body{
       display: block;
       font-size: 11vw;
       left: 54%;
-      top: 56%;
+      bottom: 35%;
+    }
+
+   .contactdevicecont {
+      display: flex;
+      flex-direction: column;
+      padding: 20px 30px;
     }
 
     .contactdevicecont form {
-      padding: 10vh 5vw;;
+      text-align: center;
     }
 
     .formgroupdevice {
       font-size: 30px;
-      margin-bottom: 5%;
+      margin-bottom: 20px;
+      margin-top: 25px;
+      text-align: center;
     }
 
     .formgroupdevice input{
-      width: 80vw;
-      height: 5vh;
+      width: 100%;
+      height: 40px;
       font-size: 25px;
+      overflow: visible;
     }
 
     .formgroupdevice textarea {
-      width: 80vw;
-      height: 40vh;
+      width: 100%;
+      height: 250px;
       font-size: 25px;
+      overflow: visible;
+      resize: none;
     }
 
     .buttondevice {
       font-size: 25px;
       width: 40vw;
-      height: 5vh;
+      height: 40px;
     }
 
-    .buttondevice:active {
-      color: white;
-      background: slategrey;
-    }
-
-    .stop1 {
-      display: block;
-    }
-
-    .stop2 {
-      display: block;
-    }
-
-    .stop3 {
-      display: block;
-    }
 }
