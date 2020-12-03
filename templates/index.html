@@ -7,6 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link rel="preload" href="style.css" as="style">
+        <link rel="preload" href="main.js" as="script">
         <link type="text/css" rel="stylesheet" href="static/style.css">
     </head>
     <body>
@@ -81,9 +83,12 @@
 
             <div class="backgrounddevice"></div>
 
-            <div class="homedevicecont" id="homedevicecont"></div>
+            <div class="homedevicecont" id="homedevicecont">
+              <div class="stop"></div>
+            </div>
 
             <div class="aboutdevicecont" id="aboutdevicecont">
+              <img class="backhome" href="#homedevicecont" src="static/images/home.png">
               <div class="abouttxtdevice">
                 <p>I've always been curious about coding but never thought of pursuing a career as a programmer up until
               recently when I discovered Python and fell in love with it/I'm currently self-learning
@@ -91,22 +96,23 @@
               on this website very soon/Thanks for passing by.
               </p>
               </div>
-
-              <a href="#homedevicecont"><img class="backhome" src="static/images/home.png" ></a>
-
+              <div class="stop"></div>
             </div>
 
+
+
             <div class="workdevicecont" id="workdevicecont">
+              <img class="backhome" href="#homedevicecont" src="static/images/home.png">
                 <div class="info"><p>Click on the projects to see the code!</p></div>
               <div class="work1device">
                 <a href="https://github.com/MarcoFalcone/Portfolio" target="_blank">My personal responsive portfolio built from scratch using html/css and flask</a>
               </div>
-
-              <a href="#homedevicecont"><img class="backhome" src="static/images/home.png" ></a>
-
+              <div class="stop"></div>
             </div>
 
+
             <div class="contactdevicecont" id="contactdevicecont">
+              <img class="backhome" href="#homedevicecont" src="static/images/home.png">
                 <div class="maildevice"><p>mfalcone.dev@gmail.com</p></div>
               <form action="submit_form" method="post">
                 <div class="formgroupdevice">
@@ -124,7 +130,6 @@
                 <button class="buttondevice" type="submit">Submit</button>
               </form>
 
-              <a href="#homedevicecont"><img class="backhome" src="static/images/home.png" ></a>
 
             </div>
 
@@ -141,9 +146,8 @@
             </form>
           </div>
 
-          <div class="stop1"></div>
-          <div class="stop2"></div>
-          <div class="stop3"></div>
+
+
         </div>
 
           <script src="https://code.jquery.com/jquery-3.5.0.js"></script>

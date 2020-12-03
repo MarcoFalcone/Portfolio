@@ -8,7 +8,10 @@ html, body{
 }
 
 .background {
-  background: url(images/white.jpg) no-repeat center center fixed;
+  background: url(https://ik.imagekit.io/7ol7k87qcca/white_E__BC8BmFC3j.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   position: absolute;
   top: 0;
@@ -401,60 +404,39 @@ html, body{
 }
 
 .aboutdevicecont {
+  position: relative;
   display: none;
-  position: absolute;
-  top: 100vh;
-}
-
-.workdevicecont {
-  display: none;
-  position: absolute;
-  top: 200vh;
-}
-
-.contactdevicecont {
-  display: none;
-  position: absolute;
-  top: 300vh;
   height: 100vh;
 }
 
+.workdevicecont {
+  position: relative;
+  display: none;
+  height: 100vh;
+}
+
+.contactdevicecont {
+  position: relative;
+  display: none;
+}
+
 .backhome {
+  display: none;
   position: absolute;
-  height: 35px;
-  width: auto;
+  height: auto;
+  width: 35px;
   left: 5vw;
   top: 3vh;
 }
 
-.stop1 {
+.stop {
   display: none;
+  position: absolute;
+  bottom: 0%;
   height: 1px;
   background: black;
   width: 60%;
-  position: absolute;
   left: 20%;
-  top: 100vh;
-}
-
-.stop2 {
-  display: none;
-  height: 1px;
-  background: black;
-  width: 60%;
-  position: absolute;
-  left: 20%;
-  top: 200vh;
-}
-
-.stop3 {
-  display: none;
-  height: 1px;
-  background: black;
-  width: 60%;
-  position: absolute;
-  left: 20%;
-  top: 300vh;
 }
 
 @keyframes slideleft {
@@ -507,16 +489,15 @@ html, body{
         display: none;
     }
 
-    .cont {
+      .cont {
       width: 100vw;
       height: 100vh;
-      background: url(images/white.jpg) no-repeat center center fixed;
+      background: url(https://ik.imagekit.io/7ol7k87qcca/white_E__BC8BmFC3j.jpg) no-repeat center center fixed;
       background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
       opacity: 0;
       animation: fadein 2s ease-out 0.5s forwards;
       overflow-y: auto;
@@ -579,12 +560,13 @@ html, body{
       display: block;
       display: flex;
       flex-direction: column;
-      padding: 60px 20vw;
+      padding: 0 20vw 0;
     }
 
     .abouttxtdevice {
       display: block;
       width: 100%;
+      margin-top: 100px;
     }
 
     .works {
@@ -637,17 +619,17 @@ html, body{
     .contactdevicecont {
        display: flex;
        flex-direction: column;
-       padding: 30px 20vw;
+       padding: 0 20vw 50px;
      }
 
      .contactdevicecont form {
        text-align: center;
+       margin-top: 100px;
      }
 
      .formgroupdevice {
        font-size: 30px;
-       margin-bottom: 20px;
-       margin-top: 25px;
+       margin-bottom: 30px;
        text-align: center;
      }
 
@@ -677,15 +659,11 @@ html, body{
       background: slategrey;
     }
 
-    .stop1 {
+    .backhome {
       display: block;
     }
 
-    .stop2 {
-      display: block;
-    }
-
-    .stop3 {
+    .stop {
       display: block;
     }
 
@@ -718,14 +696,12 @@ html, body{
       transform: translateX(10vw);
     }
   }
-    .cont {
-      background: url(images/white2.jpg) no-repeat center center fixed;
+      .cont {
+      background: url(https://ik.imagekit.io/7ol7k87qcca/white2_i5_GY7o3OgkpK.jpg) no-repeat center center fixed;
       background-size: cover;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       opacity: 0;
       animation: fadein 2s ease-out 0.5s forwards;
       overflow-y: auto;
@@ -785,7 +761,7 @@ html, body{
     .aboutdevicecont {
       display: flex;
       flex-direction: column;
-      padding: 80px 30px;
+      padding: 0 30px ;
     }
 
     .abouttxtdevice {
@@ -827,8 +803,8 @@ html, body{
     }
 
     .maildevice {
-        display: block;
-        font-size: 18px;
+      display: block;
+      font-size: 18px;
     }
 
     .contactdevice,
@@ -842,17 +818,17 @@ html, body{
    .contactdevicecont {
       display: flex;
       flex-direction: column;
-      padding: 20px 30px;
+      padding: 0 30px 50px;
     }
 
     .contactdevicecont form {
       text-align: center;
+      margin-top: 50px;
     }
 
     .formgroupdevice {
       font-size: 30px;
       margin-bottom: 20px;
-      margin-top: 25px;
       text-align: center;
     }
 
