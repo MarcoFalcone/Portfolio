@@ -512,7 +512,8 @@ html, body{
     height: 100%;
     opacity: 0;
     animation: fadein 2s ease-out 0.5s forwards;
-    overflow-y: scroll;
+    overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch;
   }
 
 
@@ -726,7 +727,8 @@ html, body{
       height: 100%;
       opacity: 0;
       animation: fadein 2s ease-out 0.5s forwards;
-      overflow-y: scroll;
+      overflow-y: scroll !important;
+      -webkit-overflow-scrolling: touch;
     }
 
     .lineleft {
