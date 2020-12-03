@@ -14,6 +14,7 @@ html, body{
   -o-background-size: cover;
   background-size: cover;
   position: absolute;
+  z-index: -1;
   top: 0;
   right: 0;
   bottom: 0;
@@ -484,22 +485,7 @@ html, body{
       transform: translateX(600px);
     }
   }
-
     .background {
-        display: none;
-    }
-
-      .cont {
-      width: 100vw;
-      height: 100vh;
-      background: url(https://ik.imagekit.io/7ol7k87qcca/white_E__BC8BmFC3j.jpg) no-repeat center center fixed;
-      background-size: cover;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      position: absolute;
-      opacity: 0;
-      animation: fadein 2s ease-out 0.5s forwards;
       overflow-y: auto;
     }
 
@@ -696,20 +682,11 @@ html, body{
       transform: translateX(10vw);
     }
   }
-      .cont {
-      background: url(https://ik.imagekit.io/7ol7k87qcca/white2_i5_GY7o3OgkpK.jpg) no-repeat center center fixed;
-      background-size: cover;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      opacity: 0;
-      animation: fadein 2s ease-out 0.5s forwards;
-      overflow-y: auto;
-    }
-
 
      .background {
-      display: none;
+      background: url(https://ik.imagekit.io/7ol7k87qcca/white2_i5_GY7o3OgkpK.jpg) no-repeat center center fixed;
+      background-size: cover;
+      overflow-y: auto;
     }
 
     .lineleft {
@@ -818,7 +795,7 @@ html, body{
    .contactdevicecont {
       display: flex;
       flex-direction: column;
-      padding: 0 30px 50px;
+      padding: 0 30px 80px;
     }
 
     .contactdevicecont form {
