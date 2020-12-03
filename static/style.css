@@ -1,10 +1,11 @@
+
 * {
   margin: 0;
   padding: 0;
 }
 
 html, body{
-  overflow-y: hidden;
+  overflow: hidden;
 }
 
 .background {
@@ -14,11 +15,8 @@ html, body{
   -o-background-size: cover;
   background-size: cover;
   position: absolute;
-  z-index: -1;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  width: 100%;
+  height: 100%;
   opacity: 0;
   animation: fadein 2s ease-out 0.5s forwards;
 }
@@ -37,7 +35,7 @@ html, body{
   height: 1px;
   background: black;
   width: 60%;
-  position: fixed;
+  position: absolute;
   bottom: 51%;
   right: 10%;
   animation: slideright 2s ease;
@@ -81,7 +79,7 @@ html, body{
   justify-content: space-around;
   position: absolute;
   transform: translate(-100%, -100%);
-  width: 30px;
+  width: 20px;
   height: 20vh;
   left: 49.5%;
   top: 30%;
@@ -417,7 +415,7 @@ html, body{
 }
 
 .contactdevicecont {
-  position: relative;
+  position: absolute;
   display: none;
 }
 
@@ -470,6 +468,13 @@ html, body{
   }
 }
 
+/*1440p*/
+@media screen and (min-width: 2560px){
+  .socials{
+    width: 30px;
+  }
+}
+
 /*tablet*/
 @media screen and (max-width: 1024px) {
 
@@ -485,30 +490,28 @@ html, body{
       transform: translateX(600px);
     }
   }
+
     .background {
-      overflow-y: auto;
+        overflow-y: auto;
     }
 
+
     .lineleft {
-      position: absolute;
       top: 47.7%;
       left: 10%;
     }
 
     .lineright {
-      position: absolute;
       bottom: 51%;
       right: 10%;
     }
 
     .linebottom {
-      position: absolute;
       left: 49.5%;
       bottom: 10%;
     }
 
     .lineup {
-      position: absolute;
       right: 49%;
       top: 10%;
     }
@@ -682,30 +685,37 @@ html, body{
       transform: translateX(10vw);
     }
   }
+    html, body {
+      overflow-x: auto;
+      overflow-y: auto;
+    }
 
      .background {
+      display: block;
       background: url(https://ik.imagekit.io/7ol7k87qcca/white2_i5_GY7o3OgkpK.jpg) no-repeat center center fixed;
       background-size: cover;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      position: fixed;
+      opacity: 0;
+      animation: fadein 2s ease-out 0.5s forwards;
       overflow-y: auto;
     }
 
     .lineleft {
-      position: absolute;
       top: 48%;
     }
 
     .lineright {
-        position: absolute;
         bottom: 51%;
       }
 
     .linebottom {
-        position: absolute;
         left: 49%;
       }
 
     .lineup {
-        position: absolute;
         right: 49%;
       }
 
@@ -795,7 +805,7 @@ html, body{
    .contactdevicecont {
       display: flex;
       flex-direction: column;
-      padding: 0 30px 80px;
+      padding: 0 30px 50px;
     }
 
     .contactdevicecont form {
