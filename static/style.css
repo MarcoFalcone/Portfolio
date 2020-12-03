@@ -491,9 +491,29 @@ html, body{
     }
   }
 
-    .background {
-        overflow-y: auto;
-    }
+  html, body {
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+
+  .background {
+    display: none;
+  }
+
+   .wrap {
+    display: block;
+    background: url(https://ik.imagekit.io/7ol7k87qcca/white_E__BC8BmFC3j.jpg) no-repeat center center fixed;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    animation: fadein 2s ease-out 0.5s forwards;
+    overflow-y: auto;
+  }
 
 
     .lineleft {
