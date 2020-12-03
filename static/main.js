@@ -2,7 +2,7 @@
 $('.backhome').click(function (e) {
     e.preventDefault();
 
-    $('html').animate({
+    $('.wrap').animate({
         scrollTop: $("#homedevicecont").offset().top - 0
     }, 600);
 });
@@ -10,7 +10,7 @@ $('.backhome').click(function (e) {
 $('.aboutdevice').click(function (e) {
     e.preventDefault();
 
-    $('html').animate({
+    $('.wrap').animate({
         scrollTop: $("#aboutdevicecont").offset().top - 0
     }, 600);
 });
@@ -18,7 +18,7 @@ $('.aboutdevice').click(function (e) {
 $('.worksdevice').click(function (e) {
     e.preventDefault();
 
-    $('html').animate({
+    $('.wrap').animate({
         scrollTop: $("#workdevicecont").offset().top - 0
     }, 600);
 });
@@ -26,7 +26,7 @@ $('.worksdevice').click(function (e) {
 $('.contactdevice').click(function (e) {
     e.preventDefault();
 
-    $('html').animate({
+    $('.wrap').animate({
         scrollTop: $("#contactdevicecont").offset().top - 0
     }, 600);
 });
