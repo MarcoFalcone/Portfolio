@@ -708,7 +708,7 @@ body:before {
       left: 0;
       top: 0;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       z-index: -10;
       background: url(https://ik.imagekit.io/7ol7k87qcca/white2_i5_GY7o3OgkpK.jpg) no-repeat center center;
       -webkit-background-size: cover;
