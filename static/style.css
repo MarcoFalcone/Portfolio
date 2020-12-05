@@ -415,16 +415,25 @@ html, body{
 }
 
 .contactdevicecont {
-  position: absolute;
+  position: relative;
   display: none;
+}
+
+.backhomecont {
+  display: none;
+  position: absolute;
+  top: 103vh;
+  left: 3vh;
+  height: 290%;
+  z-index: 1;
 }
 
 .backhome {
   display: none;
-  position: absolute;
+  position: sticky;
   height: auto;
   width: 35px;
-  left: 5vw;
+  left: 0;
   top: 3vh;
 }
 
@@ -496,11 +505,7 @@ html, body{
     overflow-y: auto;
   }
 
-  .background {
-    display: none;
-  }
-
-   .wrap {
+   .background {
     display: block;
     background: url(https://ik.imagekit.io/7ol7k87qcca/white_E__BC8BmFC3j.jpg) no-repeat center center fixed;
     background-size: cover;
@@ -669,6 +674,10 @@ html, body{
       background: slategrey;
     }
 
+    .backhomecont {
+      display: block;
+    }
+
     .backhome {
       display: block;
     }
@@ -711,11 +720,7 @@ html, body{
       overflow-y: auto;
     }
 
-    .background {
-      display: none;
-    }
-
-     .wrap {
+     .background {
       display: block;
       background: url(https://ik.imagekit.io/7ol7k87qcca/white2_i5_GY7o3OgkpK.jpg) no-repeat center center fixed;
       background-size: cover;
