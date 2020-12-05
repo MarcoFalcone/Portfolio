@@ -431,6 +431,7 @@ html, body{
 .backhome {
   display: none;
   position: sticky;
+  position: -webkit-sticky;
   height: auto;
   width: 35px;
   left: 0;
