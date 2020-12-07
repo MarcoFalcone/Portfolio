@@ -503,7 +503,8 @@ html, body{
 
   html, body {
     overflow-x: auto;
-    overflow-y: auto;
+    overflow-y: scroll !important;
+    -webkit-overflow-scrolling: touch;
   }
 
    .background {
@@ -518,8 +519,6 @@ html, body{
     height: 100%;
     opacity: 0;
     animation: fadein 2s ease-out 0.5s forwards;
-    overflow-y: scroll !important;
-    -webkit-overflow-scrolling: touch;
   }
 
 
@@ -718,7 +717,8 @@ html, body{
   }
     html, body {
       overflow-x: auto;
-      overflow-y: auto;
+      overflow-y: scroll !important;
+      -webkit-overflow-scrolling: touch;
     }
 
      .background {
@@ -728,13 +728,11 @@ html, body{
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
-      position: absolute;
+      position: fixed;
       width: 100%;
       height: 100%;
       opacity: 0;
       animation: fadein 2s ease-out 0.5s forwards;
-      overflow-y: scroll !important;
-      -webkit-overflow-scrolling: touch;
     }
 
     .lineleft {
