@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  image-rendering: -webkit-optimize-contrast; /*fix blurry downscaled images on chorme*/
 }
 
 html, body{
