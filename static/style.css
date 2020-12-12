@@ -399,25 +399,26 @@ html, body{
 }
 
 .homedevicecont {
-  height: 100vh;
   display: none;
+  height: 100vh;
 }
 
 .aboutdevicecont {
   position: relative;
   display: none;
-  height: 100vh;
+  height: 667px;
 }
 
 .workdevicecont {
   position: relative;
   display: none;
-  height: 100vh;
+  height: 667px;
 }
 
 .contactdevicecont {
   position: relative;
   display: none;
+  height: 667px;
 }
 
 .backhomecont {
@@ -425,7 +426,7 @@ html, body{
   position: absolute;
   top: 103vh;
   left: 3vh;
-  height: 290%;
+  height: 2120px;
   z-index: 1;
 }
 
