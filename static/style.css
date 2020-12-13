@@ -5,7 +5,8 @@
   scrollbar-color: slategrey transparent;
   scrollbar-radius: 20px;
   image-rendering: -webkit-optimize-contrast; /*fix blurry downscaled images on chorme*/
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
@@ -27,15 +28,13 @@ html, body{
 
 .background {
   background: url(https://ik.imagekit.io/7ol7k87qcca/white_E__BC8BmFC3j.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   position: absolute;
   width: 100%;
   height: 100%;
   opacity: 0;
-  animation: fadein 2s ease-out 0.5s forwards;
+  -webkit-animation: fadein 2s ease-out 0.5s forwards;
+          animation: fadein 2s ease-out 0.5s forwards;
 }
 
 .lineleft {
@@ -45,7 +44,8 @@ html, body{
   position: absolute;
   top: 47.4%;
   left: 10%;
-  animation: slideleft 2s ease;
+  -webkit-animation: slideleft 2s ease;
+          animation: slideleft 2s ease;
 }
 
 .lineright {
@@ -55,7 +55,8 @@ html, body{
   position: absolute;
   bottom: 51%;
   right: 10%;
-  animation: slideright 2s ease;
+  -webkit-animation: slideright 2s ease;
+          animation: slideright 2s ease;
 }
 
 .linebottom {
@@ -64,7 +65,8 @@ html, body{
   position: absolute;
   left: 49%;
   bottom: 10%;
-  animation: slideup 2s ease;
+  -webkit-animation: slideup 2s ease;
+          animation: slideup 2s ease;
 }
 
 .lineup {
@@ -73,7 +75,8 @@ html, body{
   position: absolute;
   right: 50.2%;
   top: 10%;
-  animation: slidedown 2s ease;
+  -webkit-animation: slidedown 2s ease;
+          animation: slidedown 2s ease;
 }
 
 .my_name {
@@ -82,26 +85,38 @@ html, body{
   position: absolute;
   left: 48%;
   top: 51.5%;
-  transform: translate(-100%, -100%);
+  -webkit-transform: translate(-100%, -100%);
+      -ms-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
   font-family: 'Mrs Saint Delafield', cursive;
   font-weight: lighter;
   font-size: 9vh;
-  animation: fadein 3s ease-out 2s forwards;
+  -webkit-animation: fadein 3s ease-out 2s forwards;
+          animation: fadein 3s ease-out 2s forwards;
   cursor: default;
 }
 
 .socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   position: absolute;
-  transform: translate(-100%, -100%);
+  -webkit-transform: translate(-100%, -100%);
+      -ms-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
   width: 20px;
   height: 20vh;
   left: 49.5%;
   top: 30%;
   opacity: 0;
-  animation: fadein 3s ease-out 2s forwards;
+  -webkit-animation: fadein 3s ease-out 2s forwards;
+          animation: fadein 3s ease-out 2s forwards;
 }
 
 .insta,
@@ -109,19 +124,27 @@ html, body{
 .linkedin {
   width: 100%;
   height: auto;
+  -webkit-transition: ease 0.2s;
+  -o-transition: ease 0.2s;
   transition: ease 0.2s;
 }
 
 .insta:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .git:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .linkedin:hover {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .about {
@@ -132,9 +155,14 @@ html, body{
   position: absolute;
   right: 49.7%;
   top: 47.5%;
-  transform: translate(100%, -100%);
-  animation: fadein 3s ease-out 2.5s forwards;
+  -webkit-transform: translate(100%, -100%);
+      -ms-transform: translate(100%, -100%);
+          transform: translate(100%, -100%);
+  -webkit-animation: fadein 3s ease-out 2.5s forwards;
+          animation: fadein 3s ease-out 2.5s forwards;
   cursor: default;
+  -webkit-transition: .3s ease color;
+  -o-transition: .3s ease color;
   transition: .3s ease color;
 }
 
@@ -146,7 +174,8 @@ html, body{
   opacity: 0;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
-  animation: fadein 3s ease-out 2.5s forwards;
+  -webkit-animation: fadein 3s ease-out 2.5s forwards;
+          animation: fadein 3s ease-out 2.5s forwards;
 }
 
 .abouttxt {
@@ -155,6 +184,8 @@ html, body{
   height: 33vh;
   width: 40vw;
   bottom: 99%;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
@@ -197,9 +228,14 @@ html, body{
   position: absolute;
   left: 48.5%;
   top: 54%;
-  transform: translate(-100%, -100%);
-  animation: fadein 3s ease-out 3s forwards;
+  -webkit-transform: translate(-100%, -100%);
+      -ms-transform: translate(-100%, -100%);
+          transform: translate(-100%, -100%);
+  -webkit-animation: fadein 3s ease-out 3s forwards;
+          animation: fadein 3s ease-out 3s forwards;
   cursor: default;
+  -webkit-transition: .3s ease color;
+  -o-transition: .3s ease color;
   transition: .3s ease color;
 }
 
@@ -211,7 +247,8 @@ html, body{
   opacity: 0;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
-  animation: fadein 3s ease-out 3s forwards;
+  -webkit-animation: fadein 3s ease-out 3s forwards;
+          animation: fadein 3s ease-out 3s forwards;
 }
 
 .works:hover {
@@ -225,6 +262,8 @@ html, body{
   right: 0;
   top: 0%;
   opacity: 0;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   padding: 5vh 0 0 9vw;
 }
@@ -232,13 +271,21 @@ html, body{
 .slideshow {
   height: 50%;
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .crosses {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .cross {
@@ -248,6 +295,8 @@ html, body{
   margin: 0 2px;
   background-color: black;
   border-radius: 10%;
+  -webkit-transition: background-color 0.6s ease;
+  -o-transition: background-color 0.6s ease;
   transition: background-color 0.6s ease;
 }
 
@@ -264,7 +313,10 @@ html, body{
   font-weight: bold;
   font-size: 1.3vw;
   padding: 1vw;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .prev, .next:hover {
@@ -294,25 +346,20 @@ html, body{
   margin-left: 20px;
 }
 
-.info {
-  display: none;
-  font-style: italic;
-  text-align: center;
-  margin: 0 auto;
-}
 
-.work1device {
+.workdevice {
   margin-top: 60px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 21px;
   border: 1px solid slategrey;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.8);
 }
 
-.work1device a {
-  text-decoration: none;
+.workdevice a {
   color: black;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 21px;
+  margin-left: 10px;
 }
 
 .workscont a:hover {
@@ -331,9 +378,14 @@ html, body{
   position: absolute;
   right: 49.8%;
   top: 54%;
-  transform: translate(100%, -100%);
-  animation: fadein 3s ease-out 3.5s forwards;
+  -webkit-transform: translate(100%, -100%);
+      -ms-transform: translate(100%, -100%);
+          transform: translate(100%, -100%);
+  -webkit-animation: fadein 3s ease-out 3.5s forwards;
+          animation: fadein 3s ease-out 3.5s forwards;
   cursor: default;
+  -webkit-transition: .3s ease color;
+  -o-transition: .3s ease color;
   transition: .3s ease color;
 }
 
@@ -346,6 +398,8 @@ html, body{
   left: 100%;
   margin-left: 20%;
   opacity: 0;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
 }
 
@@ -366,7 +420,8 @@ html, body{
   opacity: 0;
   font-family: 'Montserrat', sans-serif;
   position: absolute;
-  animation: fadein 3s ease-out 3.5s forwards;
+  -webkit-animation: fadein 3s ease-out 3.5s forwards;
+          animation: fadein 3s ease-out 3.5s forwards;
 }
 
 .contact:hover {
@@ -386,9 +441,12 @@ html, body{
   height: 50vh;
   top: 0%;
   opacity: 0;
+  -webkit-transition: 0.5s ease;
+  -o-transition: 0.5s ease;
   transition: 0.5s ease;
   overflow-y: auto;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .formgroup {
@@ -423,6 +481,8 @@ html, body{
   width: 20%;
   border: 1px solid slategrey;
   border-radius: 5px;
+  -webkit-transition: .3s ease color;
+  -o-transition: .3s ease color;
   transition: .3s ease color;
   cursor: pointer;
 }
@@ -517,27 +577,65 @@ html, body{
   left: 20%;
 }
 
+@-webkit-keyframes slideleft {
+  0%{
+    -webkit-transform: translateX(-1300px);
+            transform: translateX(-1300px);
+  }
+}
+
 @keyframes slideleft {
   0%{
-    transform: translateX(-1300px);
+    -webkit-transform: translateX(-1300px);
+            transform: translateX(-1300px);
+  }
+}
+
+@-webkit-keyframes slideright {
+  0%{
+    -webkit-transform: translateX(1300px);
+            transform: translateX(1300px);
   }
 }
 
 @keyframes slideright {
   0%{
-    transform: translateX(1300px);
+    -webkit-transform: translateX(1300px);
+            transform: translateX(1300px);
+  }
+}
+
+@-webkit-keyframes slideup {
+  0%{
+    -webkit-transform: translateY(700px);
+            transform: translateY(700px);
   }
 }
 
 @keyframes slideup {
   0%{
-    transform: translateY(700px);
+    -webkit-transform: translateY(700px);
+            transform: translateY(700px);
+  }
+}
+
+@-webkit-keyframes slidedown {
+  0%{
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
   }
 }
 
 @keyframes slidedown {
   0%{
-    transform: translateY(-700px);
+    -webkit-transform: translateY(-700px);
+            transform: translateY(-700px);
+  }
+}
+
+@-webkit-keyframes fadein {
+  100%{
+    opacity: 1;
   }
 }
 
@@ -558,15 +656,32 @@ html, body{
 @media screen and (max-width: 1024px) {
 
 
+  @-webkit-keyframes slideleft {
+    0%{
+      -webkit-transform: translateX(-600px);
+              transform: translateX(-600px);
+    }
+  }
+
+
   @keyframes slideleft {
     0%{
-      transform: translateX(-600px);
+      -webkit-transform: translateX(-600px);
+              transform: translateX(-600px);
+    }
+  }
+
+  @-webkit-keyframes slideright {
+    0%{
+      -webkit-transform: translateX(600px);
+              transform: translateX(600px);
     }
   }
 
   @keyframes slideright {
     0%{
-      transform: translateX(600px);
+      -webkit-transform: translateX(600px);
+              transform: translateX(600px);
     }
   }
 
@@ -589,7 +704,8 @@ html, body{
     width: 100%;
     height: 100%;
     opacity: 0;
-    animation: fadein 2s ease-out 0.5s forwards;
+    -webkit-animation: fadein 2s ease-out 0.5s forwards;
+            animation: fadein 2s ease-out 0.5s forwards;
     overflow-y: scroll !important;
     -webkit-overflow-scrolling: touch;
   }
@@ -646,8 +762,13 @@ html, body{
 
     .aboutdevicecont {
       display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       padding: 0 20vw 0;
     }
 
@@ -671,20 +792,15 @@ html, body{
 
     .workdevicecont {
       display: block;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       padding: 0 20vw;
       text-align: center;
-    }
-
-    .info {
-      display: block;
-      font-size: 28px;
-      width: 60vw;
-    }
-
-    .work1device a {
-      width: 100%;
     }
 
     .contact {
@@ -705,8 +821,13 @@ html, body{
     }
 
     .contactdevicecont {
+       display: -webkit-box;
+       display: -ms-flexbox;
        display: flex;
-       flex-direction: column;
+       -webkit-box-orient: vertical;
+       -webkit-box-direction: normal;
+           -ms-flex-direction: column;
+               flex-direction: column;
        padding: 0 20vw 50px;
      }
 
@@ -765,27 +886,60 @@ html, body{
 @media screen and (max-width: 500px) {
 
 
+@-webkit-keyframes slideup {
+  0%{
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+  }
+}
+
+
 @keyframes slideup {
   0%{
-    transform: translateY(10vh);
+    -webkit-transform: translateY(10vh);
+            transform: translateY(10vh);
+  }
+}
+
+@-webkit-keyframes slidedown {
+  0%{
+    -webkit-transform: translateY(-10vh);
+            transform: translateY(-10vh);
   }
 }
 
 @keyframes slidedown {
   0%{
-    transform: translateY(-10vh);
+    -webkit-transform: translateY(-10vh);
+            transform: translateY(-10vh);
   }
 }
 
+  @-webkit-keyframes slideleft {
+    0%{
+      -webkit-transform: translateX(-10vw);
+              transform: translateX(-10vw);
+    }
+  }
+
   @keyframes slideleft {
     0%{
-      transform: translateX(-10vw);
+      -webkit-transform: translateX(-10vw);
+              transform: translateX(-10vw);
+    }
+  }
+
+  @-webkit-keyframes slideright {
+    0%{
+      -webkit-transform: translateX(10vw);
+              transform: translateX(10vw);
     }
   }
 
   @keyframes slideright {
     0%{
-      transform: translateX(10vw);
+      -webkit-transform: translateX(10vw);
+              transform: translateX(10vw);
     }
   }
     html, body {
@@ -803,7 +957,8 @@ html, body{
       width: 100%;
       height: 100%;
       opacity: 0;
-      animation: fadein 2s ease-out 0.5s forwards;
+      -webkit-animation: fadein 2s ease-out 0.5s forwards;
+              animation: fadein 2s ease-out 0.5s forwards;
       overflow-y: scroll !important;
       -webkit-overflow-scrolling: touch;
     }
@@ -830,7 +985,8 @@ html, body{
       left: 56%;
       top: 48%;
       font-size: 16vw;
-      animation: fadein 1s ease-out 2s forwards;
+      -webkit-animation: fadein 1s ease-out 2s forwards;
+              animation: fadein 1s ease-out 2s forwards;
     }
 
     .socials {
@@ -849,12 +1005,18 @@ html, body{
       font-size: 11vw;
       left: 57%;
       top: 35%;
-      animation: fadein 1s ease-out 2.5s forwards;
+      -webkit-animation: fadein 1s ease-out 2.5s forwards;
+              animation: fadein 1s ease-out 2.5s forwards;
     }
 
     .aboutdevicecont {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       padding: 0 30px ;
     }
 
@@ -873,25 +1035,22 @@ html, body{
       font-size: 11vw;
       left: 10%;
       bottom: 35%;
-      animation: fadein 1s ease-out 3s forwards;
+      -webkit-animation: fadein 1s ease-out 3s forwards;
+              animation: fadein 1s ease-out 3s forwards;
     }
 
     .workdevicecont {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       padding: 0 30px;
       text-align: center;
     }
 
-    .info {
-      display: block;
-      font-size: 18px;
-      width: 60vw;
-    }
-
-    .work1device a {
-      width: 100%;
-    }
 
     .contact {
       display: none;
@@ -908,12 +1067,18 @@ html, body{
       font-size: 11vw;
       left: 54%;
       bottom: 35%;
-      animation: fadein 1s ease-out 3.5s forwards;
+      -webkit-animation: fadein 1s ease-out 3.5s forwards;
+              animation: fadein 1s ease-out 3.5s forwards;
     }
 
    .contactdevicecont {
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
-      flex-direction: column;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
       padding: 0 30px 50px;
     }
 
