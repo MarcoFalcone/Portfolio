@@ -23,3 +23,7 @@ def submit_form():
         server.quit()
 
         return render_template('thankyou.html')
+
+@app.errorhandler(500)
+def internal_server_error(e):
+    return 'Sorry! Something went wrong...try again!', 500
