@@ -163,7 +163,7 @@ html, body{
   left: 5vw;
   width: 35vw;
   height: 33vh;
-  font-size: 20px;
+  font-size: 1.1vw;
   color: black;
   text-align: justify;
   font-family: 'Montserrat', sans-serif;
@@ -226,11 +226,11 @@ html, body{
   top: 0%;
   opacity: 0;
   transition: 0.5s ease;
-  padding: 5vh 0 25vh 9vw;
+  padding: 5vh 0 0 9vw;
 }
 
 .slideshow {
-  height: 100%;
+  height: 50%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -243,8 +243,8 @@ html, body{
 
 .cross {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 1.55vh;
+  width: 0.78vw;
   margin: 0 2px;
   background-color: black;
   border-radius: 10%;
@@ -262,8 +262,8 @@ html, body{
   width: auto;
   color: black;
   font-weight: bold;
-  font-size: 25px;
-  padding: 20px;
+  font-size: 1.3vw;
+  padding: 1vw;
   user-select: none;
 }
 
@@ -280,7 +280,7 @@ html, body{
 }
 
 .work {
-  font-size: 23px;
+  font-size: 1.1vw;
   width: 60%;
   color: black;
   margin: 0 auto;
@@ -290,7 +290,7 @@ html, body{
 .work a{
   text-decoration: none;
   color: slategrey;
-  font-size: 23px;
+  font-size: 1.1vw;
   margin-left: 20px;
 }
 
@@ -380,11 +380,10 @@ html, body{
 .contact form {
   padding-top: 40%;
   padding-left: 30%;
-  padding-right: 70%;
   position: absolute;
   color: black;
   width:47vw;
-  height: 44vh;
+  height: 50vh;
   top: 0%;
   opacity: 0;
   transition: 0.5s ease;
@@ -393,16 +392,15 @@ html, body{
 }
 
 .formgroup {
-  font-size: 20px;
+  font-size: 1.1vw;
   width: 70%;
-  margin-bottom: 1%;
 }
 
 .formgroup input{
   width: 100%;
   background: white;
   border: 1px solid slategrey;
-  font-size: 20px;
+  font-size: 1.1vw;
   border-radius: 5px;
 }
 
@@ -412,7 +410,7 @@ html, body{
   background: white;
   font-family: 'Montserrat', sans-serif;
   border: 1px solid slategrey;
-  font-size: 20px;
+  font-size: 1.1vw;
   border-radius: 5px;
   resize: none;
   }
@@ -420,7 +418,8 @@ html, body{
 .button {
   color: black;
   background: white;
-  font-size: 20px;
+  font-size: 1.1vw;
+  font-family: 'Montserrat', sans-serif;
   width: 20%;
   border: 1px solid slategrey;
   border-radius: 5px;
