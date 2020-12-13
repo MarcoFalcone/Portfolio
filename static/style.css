@@ -295,9 +295,9 @@ html, body{
   margin: 0 2px;
   background-color: black;
   border-radius: 10%;
-  -webkit-transition: background-color 0.6s ease;
-  -o-transition: background-color 0.6s ease;
-  transition: background-color 0.6s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .active, .cross:active {
@@ -358,7 +358,7 @@ html, body{
 }
 
 .workdevice a {
-  color: black;
+  color: slategrey;
   margin-left: 10px;
 }
 
