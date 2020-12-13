@@ -1,3 +1,31 @@
+//slideshow works//
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("work");
+  var crosses = document.getElementsByClassName("cross");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < crosses.length; i++) {
+      crosses[i].className = crosses[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  crosses[slideIndex-1].className += " active";
+}
+
 //hideanchorlinkurl and smoothscrooll//
 $('.backhome').click(function (e) {
     e.preventDefault();

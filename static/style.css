@@ -5,6 +5,7 @@
   scrollbar-color: slategrey transparent;
   scrollbar-radius: 20px;
   image-rendering: -webkit-optimize-contrast; /*fix blurry downscaled images on chorme*/
+  box-sizing: border-box;
 }
 
 *::-webkit-scrollbar {
@@ -108,7 +109,7 @@ html, body{
 .linkedin {
   width: 100%;
   height: auto;
-  transition: ease 0.5s;
+  transition: ease 0.2s;
 }
 
 .insta:hover {
@@ -225,16 +226,72 @@ html, body{
   top: 0%;
   opacity: 0;
   transition: 0.5s ease;
+  padding: 5vh 0 25vh 9vw;
 }
 
-.scrollmenu {
+.slideshow {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.crosses {
+  display: flex;
+  justify-content: center;
+}
+
+.cross {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: black;
+  border-radius: 10%;
+  transition: background-color 0.6s ease;
+}
+
+.active, .cross:active {
+  background-color: slategrey;
+}
+
+.prev, .next {
+  text-decoration: none;
   position: absolute;
-  top: 15%;
-  left: 20%;
-  height: 20vh;
-  width: 38vw;
-  overflow-y: auto;
-  box-sizing: border-box;
+  cursor: pointer;
+  width: auto;
+  color: black;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 20px;
+  user-select: none;
+}
+
+.prev, .next:hover {
+  text-decoration: none !important;
+}
+
+.prev {
+  margin-left: 5%;
+}
+
+.next {
+  right: 5%;
+}
+
+.work {
+  font-size: 23px;
+  width: 60%;
+  color: black;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.work a{
+  text-decoration: none;
+  color: slategrey;
+  font-size: 23px;
+  margin-left: 20px;
 }
 
 .info {
@@ -242,14 +299,6 @@ html, body{
   font-style: italic;
   text-align: center;
   margin: 0 auto;
-}
-
-.work,
-.work a {
-  text-decoration: none;
-  font-size: 23px;
-  color: black;
-  margin-bottom: 50px;
 }
 
 .work1device {
