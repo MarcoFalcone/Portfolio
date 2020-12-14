@@ -1,25 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  scrollbar-width: thin;
-  scrollbar-color: slategrey transparent;
-  scrollbar-radius: 20px;
   image-rendering: -webkit-optimize-contrast; /*fix blurry downscaled images on chorme*/
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-*::-webkit-scrollbar {
-  width: 8px;
-}
-
-*::-webkit-scrollbar-track {
-  background: transparent;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: slategrey;
-  border-radius: 20px;
 }
 
 html, body{
