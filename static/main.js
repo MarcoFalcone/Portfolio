@@ -26,6 +26,13 @@ function showSlides(n) {
   crosses[slideIndex-1].className += " active";
 }
 
+//show lightbox//
+$('.preview').hover(function() {
+  $('.lightbox-target').addClass('show')
+}, function() {
+  $('.lightbox-target').removeClass('show')
+})
+
 //hideanchorlinkurl and smoothscrooll//
 $('.backhome').click(function (e) {
     e.preventDefault();
