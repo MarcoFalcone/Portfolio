@@ -94,7 +94,7 @@ html, body{
   -webkit-transform: translate(-100%, -100%);
       -ms-transform: translate(-100%, -100%);
           transform: translate(-100%, -100%);
-  width: 20px;
+  width: 1.04vw;
   height: 20vh;
   left: 49.5%;
   top: 30%;
@@ -253,14 +253,13 @@ html, body{
 }
 
 .slideshow {
-  height: 50%;
+  height: 100%;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
 }
 
 .crosses {
@@ -319,11 +318,111 @@ html, body{
   font-size: 1.1vw;
   width: 60%;
   color: black;
-  margin: 0 auto;
+  margin: 50px auto;
   text-align: center;
 }
 
-.work a{
+.preview {
+  width: 80%;
+  padding: 1px;
+  border: 1px solid black;
+  box-shadow: 0px 0px 8px rgba(0,0,0,.8);
+  margin-top: 20px;
+}
+
+.lightbox-target {
+position: fixed;
+top: -100%;
+width: 100%;
+background: rgba(0,0,0,.7);
+width: 100%;
+opacity: 0;
+-webkit-transition: opacity .5s ease-in-out;
+-moz-transition: opacity .5s ease-in-out;
+-o-transition: opacity .5s ease-in-out;
+transition: opacity .5s ease-in-out;
+overflow: hidden;
+}
+
+.preview-lightbox {
+margin: auto;
+position: absolute;
+height: 70%;
+top: 0;
+left:0;
+right:0;
+bottom: 0;
+box-sizing: border-box;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+a.lightbox-close {
+display: block;
+width:50px;
+height:50px;
+box-sizing: border-box;
+background: white;
+color: black;
+text-decoration: none;
+position: absolute;
+top: -80px;
+right: 0;
+-webkit-transition: .5s ease-in-out;
+-moz-transition: .5s ease-in-out;
+-o-transition: .5s ease-in-out;
+transition: .5s ease-in-out;
+}
+
+a.lightbox-close:before {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);
+}
+
+a.lightbox-close:after {
+content: "";
+display: block;
+height: 30px;
+width: 1px;
+background: black;
+position: absolute;
+left: 26px;
+top:10px;
+-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);
+}
+
+.lightbox-target:target {
+opacity: 1;
+top: 0;
+bottom: 0;
+}
+
+.lightbox-target:target img {
+max-height: 100%;
+max-width: 100%;
+}
+
+.lightbox-target:target a.lightbox-close {
+top: 0px;
+}
+
+.codelink,
+.pagelink {
   text-decoration: none;
   color: slategrey;
   font-size: 1.1vw;
