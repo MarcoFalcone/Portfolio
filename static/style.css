@@ -95,7 +95,7 @@ html, body{
       -ms-transform: translate(-100%, -100%);
           transform: translate(-100%, -100%);
   width: 1.04vw;
-  height: 20vh;
+  height: 10vh;
   left: 49.5%;
   top: 30%;
   opacity: 0;
@@ -1065,6 +1065,7 @@ opacity: 1;
       left: 50.5%;
       top: 30%;
       width: 25px;
+      height: 120px;
     }
 
     .about {
