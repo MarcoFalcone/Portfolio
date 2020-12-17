@@ -111,6 +111,9 @@ html, body{
   -webkit-transition: ease 0.2s;
   -o-transition: ease 0.2s;
   transition: ease 0.2s;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .insta:hover {
