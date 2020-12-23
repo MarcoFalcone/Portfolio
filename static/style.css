@@ -11,7 +11,7 @@ html, body{
 }
 
 .background {
-  background: url(https://ik.imagekit.io/7ol7k87qcca/white_E__BC8BmFC3j.jpg) no-repeat center center fixed;
+  background: url(https://ik.imagekit.io/7ol7k87qcca/Portfo/white_E__BC8BmFC3j.jpg) no-repeat center center fixed;
   background-size: cover;
   position: absolute;
   width: 100%;
@@ -111,9 +111,6 @@ html, body{
   -webkit-transition: ease 0.2s;
   -o-transition: ease 0.2s;
   transition: ease 0.2s;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .insta:hover {
@@ -466,25 +463,21 @@ opacity: 1;
 }
 
 .mail {
+  position: absolute;
+  text-decoration: none;
   font-size: 1.1vw;
   color: black;
   font-style: italic;
-  position: absolute;
-  top: 40%;
-  left: 100%;
-  margin-left: 20%;
-  opacity: 0;
-  -webkit-transition: 0.5s ease;
-  -o-transition: 0.5s ease;
-  transition: 0.5s ease;
+}
+
+.mail:hover {
+  color: slategrey;
 }
 
 .maildevice {
   display: none;
   font-style: italic;
-  text-align: center;
-  width: 60vw;
-  margin: 0 auto;
+  color: slategrey;
 }
 
 
@@ -504,11 +497,7 @@ opacity: 1;
   color: slategrey;
 }
 
-.contact:hover .mail {
-  opacity: 1;
-}
-
-.contact form {
+.cont {
   padding-top: 40%;
   padding-left: 30%;
   position: absolute;
@@ -525,80 +514,17 @@ opacity: 1;
           box-sizing: border-box;
 }
 
-.formgroup {
-  font-size: 1.1vw;
-  width: 70%;
-}
-
-.formgroup input{
-  width: 100%;
-  background: white;
-  border: 1px solid slategrey;
-  font-size: 1.1vw;
-  border-radius: 5px;
-}
-
-.formgroup textarea {
-  width: 100%;
-  height: 15vh;
-  background: white;
-  font-family: 'Montserrat', sans-serif;
-  border: 1px solid slategrey;
-  font-size: 1.1vw;
-  border-radius: 5px;
-  resize: none;
-  }
-
-.button {
-  color: black;
-  background: white;
-  font-size: 1.1vw;
-  font-family: 'Montserrat', sans-serif;
-  width: 20%;
-  border: 1px solid slategrey;
-  border-radius: 5px;
-  -webkit-transition: .3s ease color;
-  -o-transition: .3s ease color;
-  transition: .3s ease color;
-  cursor: pointer;
-}
-
-.button:hover {
-  color: white;
-  background: slategrey;
+.contact:hover .cont {
   opacity: 1;
 }
 
-.contact:hover form {
-  opacity: 1;
-}
-
-.formgroupdevice {
-  font-family: 'Montserrat', sans-serif;
-}
-
-.formgroupdevice input{
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid slategrey;
-  color: black;
-  border-radius: 5px;
-}
-
-.formgroupdevice textarea {
-  background: rgba(255, 255, 255, 0.8);
-  color: black;
-  font-family: 'Montserrat', sans-serif;
-  border: 1px solid slategrey;
-  border-radius: 5px;
-}
-
-.buttondevice {
-  color: black;
-  background: rgba(255, 255, 255, 0.8);
-  border: 1px solid slategrey;
-  font-family: 'Montserrat', sans-serif;
-  border-radius: 5px;
-  cursor: pointer;
+.footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  opacity: 0;
+  -webkit-animation: fadein 1s ease-out 1s forwards;
+          animation: fadein 1s ease-out 1s forwards;
 }
 
 .homedevicecont {
@@ -903,45 +829,10 @@ opacity: 1;
        -webkit-box-direction: normal;
            -ms-flex-direction: column;
                flex-direction: column;
-       padding: 0 20vw 50px;
+               align-items: center;
+               justify-content: center;
+               font-size: 30px;
      }
-
-     .contactdevicecont form {
-       text-align: center;
-       margin-top: 100px;
-     }
-
-     .formgroupdevice {
-       font-size: 30px;
-       margin-bottom: 30px;
-       text-align: center;
-     }
-
-     .formgroupdevice input{
-       width: 100%;
-       height: 40px;
-       font-size: 25px;
-       overflow: visible;
-     }
-
-     .formgroupdevice textarea {
-       width: 100%;
-       height: 250px;
-       font-size: 25px;
-       overflow: visible;
-       resize: none;
-     }
-
-    .buttondevice {
-      font-size: 25px;
-      width: 40vw;
-      height:40px;
-    }
-
-    .buttondevice:active {
-      color: white;
-      background: slategrey;
-    }
 
     .backhomecont {
       display: block;
@@ -953,6 +844,11 @@ opacity: 1;
 
     .stop {
       display: block;
+    }
+
+    .footer {
+      width: 100%;
+      text-align: center;
     }
 
   }
@@ -1134,7 +1030,7 @@ opacity: 1;
 
     .maildevice {
       display: block;
-      font-size: 18px;
+      font-size: 25px;
     }
 
     .contactdevice,
@@ -1148,46 +1044,7 @@ opacity: 1;
     }
 
    .contactdevicecont {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
       padding: 0 30px 50px;
-    }
-
-    .contactdevicecont form {
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    .formgroupdevice {
-      font-size: 30px;
-      margin-bottom: 20px;
-      text-align: center;
-    }
-
-    .formgroupdevice input{
-      width: 100%;
-      height: 40px;
-      font-size: 25px;
-      overflow: visible;
-    }
-
-    .formgroupdevice textarea {
-      width: 100%;
-      height: 250px;
-      font-size: 25px;
-      overflow: visible;
-      resize: none;
-    }
-
-    .buttondevice {
-      font-size: 25px;
-      width: 40vw;
-      height: 40px;
     }
 
 }

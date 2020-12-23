@@ -11,8 +11,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-        <link rel="preload" href="style.css" as="style">
-        <link rel="preload" href="main.js" as="script">
         <link type="text/css" rel="stylesheet" href="static/style.css">
     </head>
     <body>
@@ -20,9 +18,9 @@
           <div class="background"></div>
 
         <div class="socials">
-          <a href="https://github.com/MarcoFalcone" target="_blank"><img class="git" src="https://ik.imagekit.io/7ol7k87qcca/Portfo/git_dkE9c-zr5USUB.png?tr=h-100,w-100"></a>
+          <a href="https://github.com/MarcoFalcone" target="_blank"><img class="git" src="https://ik.imagekit.io/7ol7k87qcca/Portfo/git_dkE9c-zr5USUB.png?tr=h-40,w-40"></a>
 
-          <a href="https://www.linkedin.com/in/marco-falcone-122938a7/" target="_blank"><img class="linkedin" src="https://ik.imagekit.io/7ol7k87qcca/Portfo/linkedin_A9C1hsf1dWID3.png?tr=h-100,w-100"></a>
+          <a href="https://www.linkedin.com/in/marco-falcone-122938a7/" target="_blank"><img class="linkedin" src="https://ik.imagekit.io/7ol7k87qcca/Portfo/linkedin_A9C1hsf1dWID3.png?tr=h-40,w-40"></a>
         </div>
 
         <div class="my_name">
@@ -73,23 +71,10 @@
 
         <div class="contact">
           <p>Contact</p>
-            <div class="mail"><p>mfalcone.dev@gmail.com</p></div>
-
-            <form action="submit_form" method="post">
-              <div class="formgroup">
-                Name <input type="text" id="name" name="name" required>
-              </div>
-
-              <div class="formgroup">
-                Email <input type="email" id="email" name="email" required>
-              </div>
-
-              <div class="formgroup">
-                Message <textarea name="message" id="message" required></textarea>
-              </div>
-
-              <button class="button" type="submit">Submit</button>
-            </form>
+          <div class="cont">
+            <p>Say Hi!</p>
+            <a class="mail" href="mailto:mfalcone.dev@gmail.com">mfalcone.dev@gmail.com</a>
+          </div>
           </div>
 
           <div class="lineleft"></div>
@@ -100,6 +85,8 @@
           <div class="lightbox-target" id="lightbox">
             <video class="preview-lightbox" src="https://ik.imagekit.io/7ol7k87qcca/Portfo/Desktop_2020.12.15_-_20.30.04.03_1HaBFWyeq.mp4" type="video/mp4" autoplay loop muted playsinline></video>
           </div>
+
+          <div class="footer">&copy; Copyright 2020 | Marco Falcone</div>
 
             <!--device-->
 
@@ -142,22 +129,9 @@
 
             <div class="contactdevicecont" id="contactdevicecont">
 
-                <div class="maildevice"><p>mfalcone.dev@gmail.com</p></div>
-              <form action="submit_form" method="post">
-                <div class="formgroupdevice">
-                  Name <input type="text" id="name" name="name" required>
-                </div>
+              <p>Say Hi!</p>
+              <a class="maildevice" href="mailto:mfalcone.dev@gmail.com">mfalcone.dev@gmail.com</a>
 
-                <div class="formgroupdevice">
-                  Email <input type="email" id="email" name="email" required>
-                </div>
-
-                <div class="formgroupdevice">
-                  Message <textarea name="message" id="message" required></textarea>
-                </div>
-
-                <button class="buttondevice" type="submit">Submit</button>
-              </form>
             </div>
 
 
@@ -175,6 +149,7 @@
           </div>
 
         </div>
+
 
           <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
           <script src="static/main.js"></script>
