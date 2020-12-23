@@ -546,7 +546,7 @@ opacity: 1;
 .contactdevicecont {
   position: relative;
   display: none;
-  height: 667px;
+  height: 650px;
 }
 
 .backhomecont {
@@ -554,7 +554,7 @@ opacity: 1;
   position: absolute;
   top: 103vh;
   left: 3vh;
-  height: 1995px;
+  height: 1900px;
   z-index: 1;
 }
 
