@@ -554,7 +554,7 @@ opacity: 1;
   position: absolute;
   top: 103vh;
   left: 3vh;
-  height: 2120px;
+  height: 1995px;
   z-index: 1;
 }
 
@@ -1045,7 +1045,7 @@ opacity: 1;
     }
 
    .contactdevicecont {
-      padding: 0 30px 50px;
+      padding: 0 30px;
     }
 
 }
