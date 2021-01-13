@@ -1,3 +1,9 @@
+//loader//
+$(window).on('load', function(){
+  $('.lds-roller').fadeOut(1000);
+  $('.wrap').fadeIn(1000);
+});
+
 //slideshow works//
 var slideIndex = 1;
 showSlides(slideIndex);
