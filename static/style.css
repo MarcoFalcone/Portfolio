@@ -15,11 +15,9 @@ html, body{
   position: absolute;
   width: 80px;
   height: 80px;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+  left: 49.5%;
+  top: 48%;
+  transform: translate(-50%, -50%);
 }
 .lds-roller div {
   animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
@@ -331,7 +329,7 @@ html, body{
 
 .workscont {
   position: absolute;
-  width: 48vw;
+  width: 47.5vw;
   height: 50vh;
   right: 0;
   top: 0%;
@@ -345,27 +343,20 @@ html, body{
 .slideshow {
   height: 100%;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
 }
 
 .crosses {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  position: absolute;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  top: -1%;
 }
 
 .cross {
   cursor: pointer;
   height: 1.55vh;
   width: 0.78vw;
-  margin: 0 2px;
+  margin-right: 3px;
   background-color: black;
   border-radius: 10%;
   -webkit-transition: background-color 0.3s ease;
@@ -406,9 +397,9 @@ html, body{
 
 .work {
   font-size: 1.1vw;
-  width: 60%;
+  width: 70%;
   color: black;
-  margin: 50px auto;
+  margin: 25px auto;
   text-align: center;
 }
 
@@ -416,7 +407,7 @@ html, body{
   width: 100%;
   border: 1px solid black;
   box-shadow: 0px 0px 8px rgba(0,0,0, 1);
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .show {
