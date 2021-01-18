@@ -807,7 +807,7 @@ opacity: 1;
 
     .maildevice {
       display: block;
-      font-size: 28px;
+      font-size: 23px;
     }
 
     .contactdevice {
@@ -828,9 +828,11 @@ opacity: 1;
                align-items: center;
                justify-content: center;
                font-size: 30px;
+               padding: 0 20vw;
      }
 
      .wrapmail {
+       width: 100%;
        font-family: 'Montserrat', sans-serif;
        text-align: center;
        border: 1px solid slategrey;
@@ -1013,7 +1015,7 @@ opacity: 1;
 
     .maildevice {
       display: block;
-      font-size: 25px;
+      font-size: 23px;
     }
 
     .contactdevice {
