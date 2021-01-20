@@ -500,13 +500,13 @@ opacity: 1;
 .aboutdevicecont {
   position: relative;
   display: none;
-  height: 667px;
+  height: auto;
 }
 
 .workdevicecont {
   position: relative;
   display: none;
-  height: 667px;
+  height: auto;
 }
 
 .contactdevicecont {
@@ -769,7 +769,7 @@ opacity: 1;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 100px 20vw 0;
+      padding: 100px 20vw 100px;
     }
 
     .abouttxtdevice {
@@ -797,7 +797,7 @@ opacity: 1;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 0 20vw;
+      padding: 0 20vw 50px;
       text-align: center;
     }
 
@@ -984,7 +984,7 @@ opacity: 1;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-              padding: 100px 30px 0;
+              padding: 60px 30px;
     }
 
     .abouttxtdevice {
@@ -1009,7 +1009,7 @@ opacity: 1;
       -webkit-box-direction: normal;
           -ms-flex-direction: column;
               flex-direction: column;
-      padding: 0 30px;
+      padding: 0 30px 30px;
       text-align: center;
     }
 
