@@ -277,7 +277,7 @@ html, body {
   height: 33vh;
   font-size: 1.1vw;
   color: black;
-  text-align: justify;
+  text-align: right;
   font-family: 'Montserrat', sans-serif;
   font-weight: lighter;
   overflow-y: auto;
