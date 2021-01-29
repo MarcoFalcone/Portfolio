@@ -3,8 +3,6 @@ Since I'm about to venture into the world of programming I challenged myself to 
 
 Built with html, css, js and flask.
 
-You can check it out at marcofalcone.dev
-
 background image from unsplash.com
 
 work by Marco Falcone
