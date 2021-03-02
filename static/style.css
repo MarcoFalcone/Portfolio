@@ -535,7 +535,8 @@ html, body {
   animation: fadein 1s ease-out 1s forwards;
 }
 
-/*device*/
+/*mobile and tablet*/
+
 .stop {
   display: none;
   position: absolute;
@@ -546,24 +547,16 @@ html, body {
   left: 20%;
 }
 
-.backhomecont {
+.backhome,
+.backhome img {
   display: none;
-  position: absolute;
-  top: 103vh;
-  left: 3vh;
-  height: 2800px;
-  z-index: 1;
-}
-
-.backhome {
-  display: none;
-  position: sticky;
-  position: -webkit-sticky;
   height: auto;
   width: 35px;
-  left: 0;
-  top: 3vh;
-  z-index: 1;
+  position: absolute;
+  bottom: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .homedevicecont {
@@ -778,10 +771,6 @@ html, body {
     }
   }
 
-  html, body {
-    overflow: auto;
-  }
-
   .background {
     display: none;
   }
@@ -860,6 +849,7 @@ html, body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    align-items: center;
     padding: 100px 20vw 100px;
   }
 
@@ -888,8 +878,8 @@ html, body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 0 20vw 50px;
-    text-align: center;
+    padding: 0 20vw 100px;
+    align-items: center;
   }
 
   .contact {
@@ -942,7 +932,8 @@ html, body {
     display: block;
   }
 
-  .backhome {
+  .backhome,
+  .backhome img {
     display: block;
   }
 
@@ -954,9 +945,6 @@ html, body {
     position: relative;
     width: 100%;
     text-align: center;
-    background: rgba(255, 255, 255, 0.3);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
   }
 }
 
@@ -1103,7 +1091,7 @@ html, body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 0 30px 30px;
+    padding: 0 30px 80px;
     text-align: center;
   }
 
