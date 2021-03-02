@@ -547,16 +547,21 @@ html, body {
   left: 20%;
 }
 
+.backhome img {
+  padding: 5px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
 .backhome,
 .backhome img {
   display: none;
   height: auto;
-  width: 35px;
+  width: 40px;
   position: absolute;
   bottom: 5px;
-  background: rgba(255, 255, 255, 0.3);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
 }
 
 .homedevicecont {
@@ -850,7 +855,7 @@ html, body {
     -ms-flex-direction: column;
     flex-direction: column;
     align-items: center;
-    padding: 100px 20vw 100px;
+    padding: 0 20vw 100px;
   }
 
   .abouttxtdevice {
@@ -1066,7 +1071,7 @@ html, body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 60px 30px;
+    padding: 0 30px 60px;
   }
 
   .abouttxtdevice {
@@ -1091,7 +1096,7 @@ html, body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    padding: 0 30px 80px;
+    padding: 0 30px 60px;
     text-align: center;
   }
 
