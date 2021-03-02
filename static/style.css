@@ -563,6 +563,7 @@ html, body {
   width: 35px;
   left: 0;
   top: 3vh;
+  z-index: 1;
 }
 
 .homedevicecont {
@@ -778,7 +779,7 @@ html, body {
   }
 
   html, body {
-    overflow-x: auto;
+    overflow: auto;
   }
 
   .background {
