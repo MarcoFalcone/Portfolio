@@ -527,7 +527,17 @@ html, body {
   opacity: 1;
 }
 
+.copy {
+  position: absolute;
+  left: 10%;
+  top: 45.5%;
+  opacity: 0;
+  -webkit-animation: fadein 1s ease-out 2s forwards;
+  animation: fadein 1s ease-out 2s forwards;
+}
+
 .footer {
+  display: none;
   position: absolute;
   bottom: 0;
   opacity: 0;
@@ -946,7 +956,12 @@ html, body {
     display: block;
   }
 
+  .copy {
+    display: none;
+  }
+
   .footer {
+    display: block;
     position: relative;
     width: 100%;
     text-align: center;
